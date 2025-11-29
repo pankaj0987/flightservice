@@ -1,5 +1,7 @@
 package com.fs.flightservice.model;
 
+import java.time.LocalDateTime;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,8 +15,8 @@ public class Flight {
     private String airline;
     private String source;
     private String destination;
-    private String departureTime;
-    private String arrivalTime;
+    private LocalDateTime departureTime;
+    private LocalDateTime arrivalTime;
     private int availableSeats;
     private double price;
 

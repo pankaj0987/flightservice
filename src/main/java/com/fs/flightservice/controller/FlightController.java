@@ -20,4 +20,9 @@ public class FlightController {
     public List<Flight> getFlights() {
         return flightService.getAvailableFlights();
     }
+
+    @GetMapping("/{flightNumber}")
+    public Flight getFlightByNumber(@PathVariable String flightNumber) {
+        return flightService.getFlightByNumber(flightNumber);
+    }
 }
